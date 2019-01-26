@@ -54,10 +54,29 @@ function setLoginState() {
         setDisplayElement(loginState);
     }
 
-    // function showAfterLoginPanel() {
-    //     loginState = 'afterLoginState';
-    //     setDisplayElement(loginState);
-    // }
+    function showAfterLoginPanel() {
+        loginState = 'afterLoginState';
+        setDisplayElement(loginState);
+    }
+
+    function validateForm() {
+        var formElem = document.getElementById('js-form');
+        var checkboxElem = document.getElementById('js-checkbox');
+        
+        formElem.addEventListener('submit', (function (e) {
+            e.preventDefault();
+        
+            if (checkboxElem.checked == true) {
+        
+                showAfterLoginPanel();
+        
+            } else {
+        
+            }
+        }))
+    }
+    
+    validateForm();
 }
 
 setLoginState();
