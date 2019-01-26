@@ -46,8 +46,13 @@ function setLoginState() {
     var showPopupForm = document.getElementById('js-show-popup-form');
     showPopupForm.addEventListener('click', showLoginPanel);
 
-    // var showAfterLoginText = document.getElementById('js-show-after-login-text');
-    // showAfterLoginText.addEventListener('click', showAfterLoginPanel);
+    var exitBtn = document.getElementById('js-exit-button');
+    exitBtn.addEventListener('click', showBeforeLoginPanel);
+
+    function showBeforeLoginPanel() {
+        loginState = 'beforeLoginState';
+        setDisplayElement(loginState);
+    }
 
     function showLoginPanel() {
         loginState = 'loginState';
