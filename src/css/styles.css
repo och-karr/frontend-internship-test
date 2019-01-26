@@ -8,6 +8,8 @@ html, body { font-family: 'Lato', sans-serif; margin: 0; padding: 0; }
 
 .btn-main:hover { transform: scale(1.15); }
 
+.container { display: -ms-flexbox; display: flex; height: 100vh; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }
+
 .before-login-element { -ms-flex-direction: column; flex-direction: column; }
 
 .success-message { font-family: 'Lobster', cursive; }

@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Lobster&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Virtua Frontend Internship Test</title>
-  </head>
-  <body>
-    <div class="container">
 
-        <section class="main element before-login-element">
-          <button id="show-popup-form" class="btn btn-main">Click me!</button>
-          <p class="success-message">OMG it works!</p>
-        </section>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Lobster&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Virtua Frontend Internship Test</title>
+</head>
 
-        <div class="popup">
-          <!-- Here goes your popup form HTML code -->
-        </div>
+<body>
+
+  <div class="container">
+
+    <section id="js-beforeLogin" class="main before-login-element">
+      <button id="js-beforeLoginBtn show-popup-form" class="btn btn-main">Click me!</button>
+      <p class="success-message">OMG it works!</p>
+    </section>
+
+    <div id="js-login" class="popup login-element">
+        <button id="js-loginBtn" class="btn btn-main">Login</button>
     </div>
-    
-    <script src="js/index.js" charset="utf-8"></script>
-  </body>
+
+    <section id="js-afterLogin" class="after-login-element">
+        <button id="js-afterLoginBtn" class="btn btn-main">Thank you!</button>
+    </section>
+
+  </div>
+
+  <script src="js/index.js" charset="utf-8"></script>
+</body>
+
 </html>
