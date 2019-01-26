@@ -1,3 +1,11 @@
+To run this file type
+```npm start```
+in your terminal and see the working project page on 
+http://localhost:8080
+or go to
+https://och-karr.github.io/frontend-internship-test/src/
+
+
 # Virtua Frontend Internship Test
 Recruitment test for frontend internship. Good luck! :)
 
