@@ -151,4 +151,27 @@ $checkmark-border-width: 1px;
             cursor: pointer;
         }
     }
+
+/* ---LOGIN-ELEMENT EXIT-BUTTON--- */
+
+    .exit-button {
+        position: absolute;
+        width: 27px;
+        height: 27px;
+        line-height: 27px;
+        border-radius: 50%;
+        top: -8px;
+        right: -8px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+        color: $white-color;
+        background: $black-color;
+        transition: all .5s ease;
+    
+        &:hover  {
+            cursor: pointer;
+            transform: scale(1.15);
+        }
+    }
 }
