@@ -8,12 +8,23 @@ html, body { font-family: 'Lato', sans-serif; margin: 0; padding: 0; }
 
 .btn-main:hover { transform: scale(1.15); }
 
+/* ---COLORS--- */
+/* ---FONTS--- */
+/* ---MIXINS--- */
+/* ---GENERAL STYLES--- */
 * { margin: 0; padding: 0; }
 
+/* ---JS DISPLAY CLASSES--- */
 .display-flex { display: -ms-flexbox; display: flex; }
 
 .display-none { display: none; }
 
+/* ---BEFORE-LOGIN-ELEMENT--- */
 .before-login-element { -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }
 
-.success-message { font-family: 'Lobster', cursive; }
+.before-login-element .success-message { font-family: "Lobster", cursive; }
+
+/* ---LOGIN-ELEMENT--- */
+.login-element { -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; width: 275px; height: 320px; box-sizing: border-box; position: relative; padding: 36px; background: #fff; border-radius: 2%; }
+
+.login-element .login-element-title { margin-bottom: 20px; font-size: 24px; font-family: "Lobster", cursive; }
