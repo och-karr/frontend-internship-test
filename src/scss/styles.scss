@@ -1,2 +1,10 @@
 /* Here goes your CSS */
 @import 'layout/main';
+
+.before-login-element {
+    flex-direction: column;
+}
+
+.success-message {
+    font-family: 'Lobster', cursive;
+}
