@@ -19,6 +19,8 @@ html, body { font-family: 'Lato', sans-serif; margin: 0; padding: 0; }
 
 .display-none { display: none; }
 
+.red-font-color { color: #e21a24; text-decoration: underline; }
+
 /* ---BEFORE-LOGIN-ELEMENT--- */
 .before-login-element { -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }
 

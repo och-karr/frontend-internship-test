@@ -71,7 +71,13 @@ function setLoginState() {
                 showAfterLoginPanel();
         
             } else {
-        
+
+                function setRedColor(element) {
+                    element.classList.add("red-font-color");
+                }
+                
+                var checkboxLabel = document.getElementById('js-checkbox-label');
+                setRedColor(checkboxLabel);
             }
         }))
     }

@@ -5,6 +5,7 @@
 
 $white-color: #fff;
 $black-color: #000;
+$red-color: #e21a24;
 $coral-color: #fc888e;
 
 /* ---FONTS--- */
@@ -34,6 +35,11 @@ $lobster: 'Lobster', cursive;
 
 .display-none {
     display: none;
+}
+
+.red-font-color {
+    color: $red-color;
+    text-decoration: underline;
 }
 
 /* ---BEFORE-LOGIN-ELEMENT--- */
