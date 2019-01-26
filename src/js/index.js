@@ -46,18 +46,18 @@ function setLoginState() {
     var showPopupForm = document.getElementById('js-show-popup-form');
     showPopupForm.addEventListener('click', showLoginPanel);
 
-    var showAfterLoginText = document.getElementById('js-show-after-login-text');
-    showAfterLoginText.addEventListener('click', showAfterLoginPanel);
+    // var showAfterLoginText = document.getElementById('js-show-after-login-text');
+    // showAfterLoginText.addEventListener('click', showAfterLoginPanel);
 
     function showLoginPanel() {
         loginState = 'loginState';
         setDisplayElement(loginState);
     }
 
-    function showAfterLoginPanel() {
-        loginState = 'afterLoginState';
-        setDisplayElement(loginState);
-    }
+    // function showAfterLoginPanel() {
+    //     loginState = 'afterLoginState';
+    //     setDisplayElement(loginState);
+    // }
 }
 
 setLoginState();
