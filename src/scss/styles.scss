@@ -12,6 +12,11 @@ $coral-color: #fc888e;
 
 $lobster: 'Lobster', cursive;
 
+/* ---DIMENSIONS--- */
+
+$checkmark-width: 16px;
+$checkmark-border-width: 1px;
+
 /* ---MIXINS--- */
 
 @mixin flex-settings() {
@@ -27,7 +32,7 @@ $lobster: 'Lobster', cursive;
     padding: 0;
 }
 
-/* ---JS DISPLAY CLASSES--- */
+/* ---JS INTERACTION CLASSES--- */
 
 .display-flex {
     display: flex;
@@ -70,6 +75,8 @@ $lobster: 'Lobster', cursive;
         font-family: $lobster;
     }
 
+/* ---LOGIN-ELEMENT INPUTS--- */
+
     .input-field {
         width: 100%;
         padding: 13px 22px;
@@ -86,11 +93,49 @@ $lobster: 'Lobster', cursive;
         margin-bottom: 18px;
     }
 
+/* ---LOGIN-ELEMENT CHECKBOX--- */
+
     .checkbox-label {
-        display: block;
+        display: inline-block;
+        position: relative;
+        line-height: $checkmark-width + 2 * $checkmark-border-width;
+        padding-left: 26px;
         margin-bottom: 25px;
         font-size: 12.5px;
+        cursor: pointer;
+
+        .input-checkbox {
+            display: none;
+
+            &:checked ~ .checkmark:after {
+                display: block;
+            }
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 16px;
+            width: $checkmark-width;
+            border: $checkmark-border-width solid $black-color;
+    
+            &:after {
+                left: 4px;
+                width: 5px;
+                height: 10px;
+                border: solid $black-color;
+                border-width: 0 3px 3px 0;
+                transform: rotate(45deg);
+    
+                content: "";
+                    position: absolute;
+                    display: none;
+                }
+        }
     }
+
+/* ---LOGIN-ELEMENT SUBMIT--- */
 
     .submit {
         display: block;

@@ -62,26 +62,26 @@ function setLoginState() {
     function validateForm() {
         var formElem = document.getElementById('js-form');
         var checkboxElem = document.getElementById('js-checkbox');
-        
+
         formElem.addEventListener('submit', (function (e) {
             e.preventDefault();
-        
+
             if (checkboxElem.checked == true) {
-        
+
                 showAfterLoginPanel();
-        
+
             } else {
 
                 function setRedColor(element) {
                     element.classList.add("red-font-color");
                 }
-                
+
                 var checkboxLabel = document.getElementById('js-checkbox-label');
                 setRedColor(checkboxLabel);
             }
         }))
     }
-    
+
     validateForm();
 }
 
