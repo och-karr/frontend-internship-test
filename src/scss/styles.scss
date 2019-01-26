@@ -5,6 +5,7 @@
 
 $white-color: #fff;
 $black-color: #000;
+$coral-color: #fc888e;
 
 /* ---FONTS--- */
 
@@ -63,4 +64,40 @@ $lobster: 'Lobster', cursive;
         font-family: $lobster;
     }
 
+    .input-field {
+        width: 100%;
+        padding: 13px 22px;
+        box-sizing: border-box;
+        font-size: 11px;
+        border: 1px solid $black-color;
+    }
+
+    .email {
+        margin-bottom: 15px;
+    }
+
+    .password {
+        margin-bottom: 18px;
+    }
+
+    .checkbox-label {
+        display: block;
+        margin-bottom: 25px;
+        font-size: 12.5px;
+    }
+
+    .submit {
+        display: block;
+        width: 100%;
+        padding: 13px;
+        font-size: 11px;
+        background: $black-color;
+        color: $white-color;
+        border: none;
+
+        &:hover {
+            background: $coral-color;
+            cursor: pointer;
+        }
+    }
 }

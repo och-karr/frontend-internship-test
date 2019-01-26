@@ -28,3 +28,15 @@ html, body { font-family: 'Lato', sans-serif; margin: 0; padding: 0; }
 .login-element { -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; width: 275px; height: 320px; box-sizing: border-box; position: relative; padding: 36px; background: #fff; border-radius: 2%; }
 
 .login-element .login-element-title { margin-bottom: 20px; font-size: 24px; font-family: "Lobster", cursive; }
+
+.login-element .input-field { width: 100%; padding: 13px 22px; box-sizing: border-box; font-size: 11px; border: 1px solid #000; }
+
+.login-element .email { margin-bottom: 15px; }
+
+.login-element .password { margin-bottom: 18px; }
+
+.login-element .checkbox-label { display: block; margin-bottom: 25px; font-size: 12.5px; }
+
+.login-element .submit { display: block; width: 100%; padding: 13px; font-size: 11px; background: #000; color: #fff; border: none; }
+
+.login-element .submit:hover { background: #fc888e; cursor: pointer; }
