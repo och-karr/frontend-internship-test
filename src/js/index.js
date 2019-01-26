@@ -73,7 +73,7 @@ function setLoginState() {
 
             if (checkboxElem.checked == true) {
 
-                showAfterLoginPanel();
+                setTimeout(showAfterLoginPanel, 3000);
 
             } else {
 
